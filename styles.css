@@ -1,0 +1,11 @@
+body {
+    background-color: lightgoldenrodyellow;
+}
+
+p.texto_entrenamientos { font-size: 19px;
+
+}
+
+img.imagen_entrenamiento {
+    display: inline-block;
+}
