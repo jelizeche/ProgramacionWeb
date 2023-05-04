@@ -2,10 +2,34 @@ body {
     background-color: lightgoldenrodyellow;
 }
 
-p.texto_entrenamientos { font-size: 19px;
+p.texto_entrenamientos { font-size: 19px;border: 4px solid black;
 
 }
 
 img.imagen_entrenamiento {
     display: inline-block;
 }
+
+.grid.layout{
+    display:grid ;
+    grid-template-areas:"menu menu"
+                        "imagenes imagenes"
+                        "contenido contenido";
+    width: 80%;
+    margin: 0 auto;
+    background-color:lightblue ;
+    padding: 20px;
+}
+
+.menu{
+    grid-area: menu ;
+}
+
+.imagenes{
+    grid-area: imagenes;
+}
+
+.textos{
+    grid-area: contenido;
+}
+
