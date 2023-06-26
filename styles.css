@@ -2,6 +2,96 @@ body {
     background-color: rgb(237, 237, 208);
 }
 
+
+#resultado-comida {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 10px;
+}
+
+#comida-saludable {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+
+
+#comida-container {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+
+
+#generar-btn {
+  font-size: 34px;
+  padding: 10px 20px;
+  margin-top: 50px;
+}
+
+
+.dieta {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.comidas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.comida {
+  background-color: #c8bdbd;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.comida h4 {
+  color: #333;
+  font-size: 16px;
+}
+
+.comida p {
+  color: #666;
+  font-size: 14px;
+}
+
+
+.rutinas-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Una columna por día de entrenamiento */
+  grid-gap: 20px; /* Espacio entre los cuadros */
+}
+
+.rutina-cuadro {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.dia-entrenamiento {
+  background-color: #c9bebe;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.dia-entrenamiento h4 {
+  color: #333;
+  margin-top: 0;
+}
+
+.dia-entrenamiento p {
+  color: #666;
+  margin-bottom: 0;
+}
+
+
+
 .titulo {
   font-size: 36px;
   font-weight: bold;

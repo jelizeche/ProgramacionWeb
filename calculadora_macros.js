@@ -51,3 +51,43 @@ carouselImages.forEach(image => {
   const clone = image.cloneNode(true);
   carouselSlide.appendChild(clone);
 });
+
+
+
+
+
+// Definir las comidas saludables disponibles
+const comidasSaludables = [
+  'Ensalada de pollo a la parrilla con verduras frescas',
+  'Salmón al horno con brócoli y quinoa',
+  'Tacos de pavo con tortillas de trigo integral y guacamole',
+  'Bowl de quinoa con aguacate, tomate y huevo',
+  'Burger de frijoles negros con ensalada de col',
+  'Sopa de lentejas con vegetales mixtos',
+  'Wrap de pollo con espinacas y hummus',
+  'Bowl de frutas con yogur griego y nueces',
+  'Batido verde con espinacas, plátano y leche de almendras'
+];
+
+// Obtener elementos del DOM
+const generarBtn = document.getElementById('generar-btn');
+const comidaContainer = document.getElementById('comida-container');
+
+// Generar sugerencia de comida al hacer clic en el botón
+generarBtn.addEventListener('click', generarComidaSaludable);
+
+function generarComidaSaludable() {
+  // Obtener una comida saludable aleatoria de la lista
+  const comidaAleatoria = comidasSaludables[Math.floor(Math.random() * comidasSaludables.length)];
+
+  // Crear elemento HTML para mostrar la sugerencia de comida
+  const comidaDiv = document.createElement('div');
+  comidaDiv.innerHTML = `<h3>Sugerencia de Comida Saludable:</h3><p>${comidaAleatoria}</p>`;
+
+  // Limpiar el contenedor de la sugerencia anterior (si existe)
+  comidaContainer.innerHTML = '';
+
+  // Agregar elemento al contenedor de la sugerencia de comida
+  comidaContainer.appendChild(comidaDiv);
+   
+}
